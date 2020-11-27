@@ -7,7 +7,7 @@
     "react",
     "starter"
   ],
-  "homepage": "https://dreamorphy.github.io/dreamorphy/",
+  "homepage": "https://dreamorphy.github.io/.",
   "main": "src/index.tsx",
   "dependencies": {
     "serve": "11.3.2",
