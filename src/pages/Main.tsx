@@ -16,12 +16,11 @@ const MainBackground = styled.div`
   height: 766px;
   background: url('assets/images/exterior_DM(no logo).png');
   position: relative;
-  display: flex;
-  justify-content: center;
 `;
 const LogoImage = styled.img`
   position: absolute;
   top: 430px;
+  left: 580px;
 `;
 
 const Container = styled.div`
