@@ -6,6 +6,7 @@ const Main: React.FC = () => {
     <Container>
       <MainBackground>
         <LogoImage src={'assets/images/exterior logo.gif'} />
+        <div id='abcdefg-jhw811'></div>
       </MainBackground>
     </Container>
   );
