@@ -12,15 +12,18 @@ const Main: React.FC = () => {
 };
 
 const MainBackground = styled.div`
-  width: 1366px;
-  height: 766px;
-  background: url('assets/images/exterior_DM(no logo).png');
+  width: 90vw;
+  height: 50vw;
+  background: url('assets/images/exterior_DM(no logo).png') no-repeat;
+  background-size: cover;
   position: relative;
+  display: flex;
+  justify-content: center;
 `;
 const LogoImage = styled.img`
   position: absolute;
-  top: 430px;
-  left: 580px;
+  width: 15vw;
+  top: 56.5%;
 `;
 
 const Container = styled.div`
