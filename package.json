@@ -7,7 +7,6 @@
     "react",
     "starter"
   ],
-  "homepage": "http://dreamophy.github.io/dreamophy",
   "main": "src/index.tsx",
   "dependencies": {
     "serve": "11.3.2",
