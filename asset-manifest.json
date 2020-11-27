@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/dreamophy/static/css/main.07a718d4.chunk.css",
+    "main.js": "/dreamophy/static/js/main.c6463f07.chunk.js",
+    "main.js.map": "/dreamophy/static/js/main.c6463f07.chunk.js.map",
+    "runtime-main.js": "/dreamophy/static/js/runtime-main.86497d99.js",
+    "runtime-main.js.map": "/dreamophy/static/js/runtime-main.86497d99.js.map",
+    "static/js/2.04202991.chunk.js": "/dreamophy/static/js/2.04202991.chunk.js",
+    "static/js/2.04202991.chunk.js.map": "/dreamophy/static/js/2.04202991.chunk.js.map",
+    "index.html": "/dreamophy/index.html",
+    "precache-manifest.ee5e1ee976efebb08268f7367f1337f7.js": "/dreamophy/precache-manifest.ee5e1ee976efebb08268f7367f1337f7.js",
+    "service-worker.js": "/dreamophy/service-worker.js",
+    "static/css/main.07a718d4.chunk.css.map": "/dreamophy/static/css/main.07a718d4.chunk.css.map",
+    "static/js/2.04202991.chunk.js.LICENSE.txt": "/dreamophy/static/js/2.04202991.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.86497d99.js",
+    "static/js/2.04202991.chunk.js",
+    "static/css/main.07a718d4.chunk.css",
+    "static/js/main.c6463f07.chunk.js"
+  ]
+}
