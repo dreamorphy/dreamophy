@@ -10,6 +10,7 @@
   "homepage": "http://dreamophy.github.io/dreamophy",
   "main": "src/index.tsx",
   "dependencies": {
+    "serve": "11.3.2",
     "@types/react-router-dom": "^5.1.6",
     "@types/styled-components": "^5.1.4",
     "gh-pages": "^3.1.0",
@@ -26,6 +27,7 @@
     "typescript": "3.7.5"
   },
   "scripts": {
+    "serve": "serve -s build/ -l 10000",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
