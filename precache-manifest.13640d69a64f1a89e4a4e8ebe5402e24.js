@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "92fb26538533b23a5e3f02b6b2e4e214",
+    "revision": "c08d6dd67498c0d2341ba470594cba40",
     "url": "/dreamorphy/index.html"
   },
   {
-    "revision": "caac66024cef837449ea",
+    "revision": "8449d2fabd16b2b9ee53",
     "url": "/dreamorphy/static/css/main.07a718d4.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dreamorphy/static/js/2.b36d80ac.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "caac66024cef837449ea",
-    "url": "/dreamorphy/static/js/main.ef52829c.chunk.js"
+    "revision": "8449d2fabd16b2b9ee53",
+    "url": "/dreamorphy/static/js/main.19444882.chunk.js"
   },
   {
     "revision": "db3605ce299f79e2d46f",

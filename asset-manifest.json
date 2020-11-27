@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/dreamorphy/static/css/main.07a718d4.chunk.css",
-    "main.js": "/dreamorphy/static/js/main.ef52829c.chunk.js",
-    "main.js.map": "/dreamorphy/static/js/main.ef52829c.chunk.js.map",
+    "main.js": "/dreamorphy/static/js/main.19444882.chunk.js",
+    "main.js.map": "/dreamorphy/static/js/main.19444882.chunk.js.map",
     "runtime-main.js": "/dreamorphy/static/js/runtime-main.3e8e45d3.js",
     "runtime-main.js.map": "/dreamorphy/static/js/runtime-main.3e8e45d3.js.map",
     "static/js/2.b36d80ac.chunk.js": "/dreamorphy/static/js/2.b36d80ac.chunk.js",
     "static/js/2.b36d80ac.chunk.js.map": "/dreamorphy/static/js/2.b36d80ac.chunk.js.map",
     "index.html": "/dreamorphy/index.html",
-    "precache-manifest.b86376e443deb0128823f8293b8008a3.js": "/dreamorphy/precache-manifest.b86376e443deb0128823f8293b8008a3.js",
+    "precache-manifest.13640d69a64f1a89e4a4e8ebe5402e24.js": "/dreamorphy/precache-manifest.13640d69a64f1a89e4a4e8ebe5402e24.js",
     "service-worker.js": "/dreamorphy/service-worker.js",
     "static/css/main.07a718d4.chunk.css.map": "/dreamorphy/static/css/main.07a718d4.chunk.css.map",
     "static/js/2.b36d80ac.chunk.js.LICENSE.txt": "/dreamorphy/static/js/2.b36d80ac.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.3e8e45d3.js",
     "static/js/2.b36d80ac.chunk.js",
     "static/css/main.07a718d4.chunk.css",
-    "static/js/main.ef52829c.chunk.js"
+    "static/js/main.19444882.chunk.js"
   ]
 }
