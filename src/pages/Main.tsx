@@ -6,7 +6,7 @@ const Main: React.FC = () => {
     <Container>
       <MainBackground>
         <LogoImage src={'assets/images/exterior logo.gif'} />
-        <div id='abcdefg-jhw811'></div>
+        <div id='abcdefg-jhw811'>왜안되는거냐............</div>
       </MainBackground>
     </Container>
   );
