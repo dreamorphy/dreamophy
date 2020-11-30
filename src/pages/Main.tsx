@@ -4,22 +4,14 @@ import styled from 'styled-components';
 
 const Main: React.FC = () => {
   return (
-    <Container>
-      <MainContainer to={'/home'}>
+    <Container to={'/home'}>
+      <BackgroundContainer>
         <BackgroundImage src={'assets/images/exterior_DM(no logo).png'} />
         <LogoImage src={'assets/images/exterior logo.gif'} />
-      </MainContainer>
+      </BackgroundContainer>
     </Container>
   );
 };
-
-const MainContainer = styled(Link)`
-  width: 100%;
-  height: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-`;
 const LogoImage = styled.img`
   position: absolute;
   object-fit: cover;
@@ -27,10 +19,19 @@ const LogoImage = styled.img`
   top: 55.8%;
 `;
 const BackgroundImage = styled.img`
+  object-fit: contain;
+  height: intrinsic;
   width: 100%;
 `;
 
-const Container = styled.div`
+const BackgroundContainer = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: center;
+`;
+
+const Container = styled(Link)`
+  align-items: flex-start;
   display: flex;
   justify-content: center;
   align-items: center;

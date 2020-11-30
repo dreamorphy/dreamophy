@@ -69,6 +69,7 @@ const HomeContainer = styled.div`
   justify-content: center;
 `;
 const BackgroundImage = styled.img`
+  height: intrinsic;
   width: 100%;
 `;
 
