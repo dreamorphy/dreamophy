@@ -1,6 +1,7 @@
+import Home from 'pages/Home';
 import * as React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { hot } from 'react-hot-loader/root';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Main from './pages/Main';
 import './styles.css';
 
@@ -10,7 +11,8 @@ const App = () => {
       <BrowserRouter>
         <title>DREAMORPHY</title>
         <Switch>
-          <Route exact={false} path={'/'} component={Main} />
+          <Route exact={true} path={'/home'} component={Home} />
+          <Route exact={true} path={'/'} component={Main} />
         </Switch>
       </BrowserRouter>
     </div>

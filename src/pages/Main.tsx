@@ -1,34 +1,37 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Main: React.FC = () => {
   return (
     <Container>
-      <MainBackground>
+      <MainContainer to={'/home'}>
+        <BackgroundImage src={'assets/images/exterior_DM(no logo).png'} />
         <LogoImage src={'assets/images/exterior logo.gif'} />
-      </MainBackground>
+      </MainContainer>
     </Container>
   );
 };
 
-const MainBackground = styled.div`
-  width: 90vw;
-  height: 50vw;
-  background: url('assets/images/exterior_DM(no logo).png') no-repeat;
-  background-size: cover;
+const MainContainer = styled(Link)`
+  width: 100%;
+  height: 100%;
   position: relative;
   display: flex;
   justify-content: center;
 `;
 const LogoImage = styled.img`
   position: absolute;
-  width: 15vw;
-  top: 56.5%;
+  object-fit: cover;
+  width: 18%;
+  top: 55.8%;
+`;
+const BackgroundImage = styled.img`
+  width: 100%;
 `;
 
 const Container = styled.div`
   display: flex;
-  height: 100vh;
   justify-content: center;
   align-items: center;
 `;
