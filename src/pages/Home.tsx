@@ -4,20 +4,29 @@ import styled from 'styled-components';
 
 const Home: React.FC = () => {
   const [modalOpen, isModalOpen] = useState(false);
+  const [modalImgSrc, setModalImgSrc] = useState('');
+
+  const handleModal = (imgSrc: string) => {
+    setModalImgSrc(imgSrc);
+    isModalOpen(true);
+  };
   return (
     <Container>
       <HomeContainer>
         <BackgroundImage src={'assets/images/background-base.png'} />
-        <ClockImg src={'assets/images/emotion receptor.gif'} onClick={() => isModalOpen(true)} />
+        <ClockImg
+          src={'assets/images/emotion receptor.gif'}
+          onClick={() => handleModal('assets/images/emotion receptor_modal.png')}
+        />
         <MorphoImg src={'assets/images/morpho.gif'} />
         <DonutFontImg src={'assets/images/showcase typo.gif'} />
-        <DreamorphyFontImg src={'assets/images/logo.gif'} />
-        <RabbitDonutImg src={'assets/images/rabbit.png'} />
-        <FoxDonutImg src={'assets/images/fox.png'} />
-        <CatDonutImg src={'assets/images/cat.png'} />
-        <BirdDonutImg src={'assets/images/bird.png'} />
-        <HedgehogDonutImg src={'assets/images/hedgehog.png'} />
-        <FishDonutImg src={'assets/images/fish.png'} />
+        <DreamorphyFontImg src={'assets/images/logo.gif'} onClick={() => handleModal('assets/images/logoPopup.png')} />
+        <RabbitDonutImg src={'assets/images/rabbit.png'} onClick={() => handleModal('assets/images/rabbitPopup.png')} />
+        <FoxDonutImg src={'assets/images/fox.png'} onClick={() => handleModal('assets/images/foxPopup.png')} />
+        <CatDonutImg src={'assets/images/cat.png'} onClick={() => handleModal('assets/images/catPopup.png')} />
+        <BirdDonutImg src={'assets/images/bird.png'} onClick={() => handleModal('assets/images/birdPopup.png')} />
+        <HedgehogDonutImg src={'assets/images/hedgehog.png'} onClick={() => handleModal('assets/images/hedgehogPopup.png')} />
+        <FishDonutImg src={'assets/images/fish.png'} onClick={() => handleModal('assets/images/fishPopup.png')} />
       </HomeContainer>
       <Modal
         isOpen={modalOpen}
@@ -27,16 +36,17 @@ const Home: React.FC = () => {
             backgroundColor: 'rgba(0, 0, 0, 0.75)',
           },
           content: {
-            width: '40%',
+            width: '80%',
             top: '50%',
             left: '50%',
             right: 'auto',
             bottom: 'auto',
             marginRight: '-50%',
+            height: '80vh',
             transform: 'translate(-50%, -50%)',
           },
         }}>
-        <ModalImg src={'assets/images/emotion receptor_modal.png'} />
+        <ModalImg src={modalImgSrc} />
       </Modal>
     </Container>
   );

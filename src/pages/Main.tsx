@@ -27,6 +27,7 @@ const BackgroundImage = styled.img`
 const BackgroundContainer = styled.div`
   position: relative;
   display: flex;
+  flex: 1;
   justify-content: center;
 `;
 
