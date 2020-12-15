@@ -164,6 +164,6 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #ffcfd9;
+  background: #3f1c33;
 `;
 export default Home;
