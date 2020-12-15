@@ -62,7 +62,7 @@ const Home: React.FC = () => {
             right: 'auto',
             bottom: 'auto',
             marginRight: '-50%',
-            height: '80vh',
+            maxHeight: '80vh',
             transform: 'translate(-50%, -50%)',
             scrollbarWidth: 'thin',
             scrollbarColor: 'red',
@@ -111,14 +111,14 @@ const DreamorphyFontImg = styled(LinkImg)`
 const RabbitDonutImg = styled(LinkImg)`
   position: absolute;
   width: 5.5%;
-  top: 40%;
-  left: 63%;
+  top: 40.8%;
+  left: 64%;
 `;
 const FoxDonutImg = styled(LinkImg)`
   position: absolute;
   width: 5.5%;
-  top: 41.5%;
-  left: 73.5%;
+  top: 42%;
+  left: 74%;
 `;
 const CatDonutImg = styled(LinkImg)`
   position: absolute;
@@ -129,21 +129,21 @@ const CatDonutImg = styled(LinkImg)`
 const BirdDonutImg = styled(LinkImg)`
   position: absolute;
   width: 10%;
-  top: 60%;
-  left: 63%;
+  top: 59.2%;
+  left: 64%;
 }
 `;
 const HedgehogDonutImg = styled(LinkImg)`
   position: absolute;
   width: 6%;
-  top: 60%;
-  left: 76%;
+  top: 59.5%;
+  left: 76.3%;
 `;
 const FishDonutImg = styled(LinkImg)`
   position: absolute;
   width: 8.5%;
-  top: 60%;
-  left: 85.5%;
+  top: 59.2%;
+  left: 85.3%;
 `;
 const ModalImg = styled(LinkImg)`
   width: 100%;
