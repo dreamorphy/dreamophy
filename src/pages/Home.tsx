@@ -97,12 +97,6 @@ const GirlImg = styled(LinkImg)`
   top: 24.245%;
   left: 25.5%;
 `;
-const DonutFontImg = styled(LinkImg)`
-  position: absolute;
-  width: 23.5%;
-  top: 30.5%;
-  left: 63.5%;
-`;
 const DreamorphyFontImg = styled(LinkImg)`
   position: absolute;
   width: 37.5%;
