@@ -5,6 +5,7 @@ import styled from 'styled-components';
 const Home: React.FC = () => {
   const [modalOpen, isModalOpen] = useState(false);
   const [modalImgSrc, setModalImgSrc] = useState('');
+  const [showGirl, isShowGirl] = useState(false);
 
   const handleModal = (imgSrc: string) => {
     setModalImgSrc(imgSrc);
@@ -18,8 +19,25 @@ const Home: React.FC = () => {
           src={'assets/images/emotion receptor.gif'}
           onClick={() => handleModal('assets/images/emotion receptor_modal.png')}
         />
-        <MorphoImg src={'assets/images/morpho.gif'} />
-        <DonutFontImg src={'assets/images/showcase typo.gif'} />
+        {showGirl ? (
+          <GirlImg
+            src={'assets/images/girl.png'}
+            onClick={() => handleModal('assets/images/morphyPopup.png')}
+            onMouseOver={(e) => {}}
+            onMouseOut={(e) => {
+              isShowGirl(false);
+            }}
+          />
+        ) : (
+          <MorphoImg
+            src={'assets/images/morpho.gif'}
+            onClick={() => handleModal('assets/images/morphyPopup.png')}
+            onMouseOver={(e) => {
+              isShowGirl(true);
+            }}
+            onMouseOut={(e) => {}}
+          />
+        )}
         <DreamorphyFontImg src={'assets/images/logo.gif'} onClick={() => handleModal('assets/images/logoPopup.png')} />
         <RabbitDonutImg src={'assets/images/rabbit.png'} onClick={() => handleModal('assets/images/rabbitPopup.png')} />
         <FoxDonutImg src={'assets/images/fox.png'} onClick={() => handleModal('assets/images/foxPopup.png')} />
@@ -35,8 +53,10 @@ const Home: React.FC = () => {
           overlay: {
             backgroundColor: 'rgba(0, 0, 0, 0.75)',
           },
+
           content: {
             width: '80%',
+            padding: 0,
             top: '50%',
             left: '50%',
             right: 'auto',
@@ -44,6 +64,8 @@ const Home: React.FC = () => {
             marginRight: '-50%',
             height: '80vh',
             transform: 'translate(-50%, -50%)',
+            scrollbarWidth: 'thin',
+            scrollbarColor: 'red',
           },
         }}>
         <ModalImg src={modalImgSrc} />
@@ -58,16 +80,22 @@ const LinkImg = styled.img`
 
 const ClockImg = styled(LinkImg)`
   position: absolute;
-  width: 26%;
-  top: 31.5%;
+  width: 21%;
+  top: 33.5%;
   left: 3%;
 `;
 
 const MorphoImg = styled(LinkImg)`
   position: absolute;
-  width: 16.5%;
-  top: 35.5%;
-  left: 29.5%;
+  width: 14.5%;
+  top: 37%;
+  left: 26.5%;
+`;
+const GirlImg = styled(LinkImg)`
+  position: absolute;
+  width: 16%;
+  top: 24.245%;
+  left: 25.5%;
 `;
 const DonutFontImg = styled(LinkImg)`
   position: absolute;
@@ -77,9 +105,8 @@ const DonutFontImg = styled(LinkImg)`
 `;
 const DreamorphyFontImg = styled(LinkImg)`
   position: absolute;
-  width: 28.5%;
-  top: 19%;
-  left: 36%;
+  width: 37.5%;
+  top: 5%;
 `;
 const RabbitDonutImg = styled(LinkImg)`
   position: absolute;
@@ -122,8 +149,7 @@ const ModalImg = styled(LinkImg)`
   width: 100%;
 `;
 const HomeContainer = styled.div`
-  width: 100%;
-  height: 100%;
+  width: 100vw;
   position: relative;
   display: flex;
   justify-content: center;
@@ -137,5 +163,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  background: #ffcfd9;
 `;
 export default Home;

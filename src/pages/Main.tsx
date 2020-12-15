@@ -6,7 +6,7 @@ const Main: React.FC = () => {
   return (
     <Container to={'/home'}>
       <BackgroundContainer>
-        <BackgroundImage src={'assets/images/exterior_DM(no logo).png'} />
+        <BackgroundImage src={'assets/images/store.png'} />
         <LogoImage src={'assets/images/exterior logo.gif'} />
       </BackgroundContainer>
     </Container>
@@ -16,7 +16,7 @@ const LogoImage = styled.img`
   position: absolute;
   object-fit: cover;
   width: 18%;
-  top: 55.8%;
+  top: 54.5%;
 `;
 const BackgroundImage = styled.img`
   object-fit: contain;
@@ -29,6 +29,7 @@ const BackgroundContainer = styled.div`
   display: flex;
   flex: 1;
   justify-content: center;
+  align-items: center;
 `;
 
 const Container = styled(Link)`
@@ -36,5 +37,7 @@ const Container = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  background: #3f1c33;
 `;
 export default Main;
